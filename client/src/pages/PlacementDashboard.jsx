@@ -33,7 +33,7 @@ import {
   CartesianGrid,
 } from 'recharts';
 
-const COLORS = ['#6366f1', '#38bdf8', '#a855f7', '#10b981', '#f43f5e', '#f59e0b'];
+const COLORS = ['#6366F1', '#8B7CF6', '#668CC7', '#4F9D7A', '#C9953D', '#C96B72'];
 
 export const PlacementDashboard = () => {
   const [dashboardData, setDashboardData] = useState(null);
@@ -336,7 +336,7 @@ export const PlacementDashboard = () => {
       <div className="p-6 rounded-2xl bg-surface border border-sb-default shadow-xs space-y-4">
         <h2 className="text-base font-bold text-sb-main flex items-center gap-2">
           <Layers className="w-4 h-4 text-sb-primary" />
-          SkillBridge Placement Intelligence Workflow
+          Inaivazhi Placement Intelligence Workflow
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="p-4 rounded-xl bg-surface-sec border border-sb-default space-y-1.5">

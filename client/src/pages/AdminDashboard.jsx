@@ -14,7 +14,7 @@ import {
 import { Link } from 'react-router-dom';
 import { Users, Building2, Briefcase, Award, TrendingUp, Percent, CheckCircle2, Shield, Star, Sparkles, Search } from 'lucide-react';
 
-const COLORS = ['#6366f1', '#38bdf8', '#a855f7', '#10b981', '#f43f5e', '#f59e0b'];
+const COLORS = ['#6366F1', '#8B7CF6', '#668CC7', '#4F9D7A', '#C9953D', '#C96B72'];
 
 export const AdminDashboard = () => {
   const [dashboardData, setDashboardData] = useState(null);
