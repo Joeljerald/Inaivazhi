@@ -75,9 +75,9 @@ export const LoginPage = () => {
         {/* Demo Quick-Select Role Switcher */}
         <div className="mb-6">
           <div className="flex items-center justify-between text-[11px] font-bold text-sb-muted uppercase tracking-wider mb-2">
-            <span>Select Demo Role Profile</span>
+            <span>Select Role Profile</span>
             <span className="text-indigo-600 font-semibold flex items-center gap-1 text-[10px]">
-              <Sparkles className="w-3 h-3" /> Auto-fill
+              <Sparkles className="w-3 h-3" /> Quick-Select
             </span>
           </div>
 

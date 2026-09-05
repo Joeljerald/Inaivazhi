@@ -35,14 +35,29 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+import { runSeed } from './utils/seedData.js';
+
 // Health Check Endpoint (Part 57)
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     success: true,
-    message: 'SkillBridge AI API is running',
+    message: 'Inaivazhi API is running',
     database: 'connected',
     timestamp: new Date().toISOString(),
   });
+});
+
+// Seed Endpoint to trigger database seed on running server
+app.post('/api/seed', async (req, res, next) => {
+  try {
+    await runSeed(true);
+    res.status(200).json({
+      success: true,
+      message: 'Database seeded successfully with 60 candidates and 5 trainer tracks.',
+    });
+  } catch (err) {
+    next(err);
+  }
 });
 
 // API Routes (Part 26 & Part 124)

@@ -16,9 +16,9 @@ import StatusHistory from '../models/StatusHistory.js';
 import { ROLES } from '../config/constants.js';
 import { calculateSkillGap } from '../services/skillGapEngine.js';
 
-export const runSeed = async () => {
+export const runSeed = async (force = false) => {
   const existingUsersCount = await User.countDocuments();
-  if (existingUsersCount >= 50) {
+  if (!force && existingUsersCount > 0) {
     console.log(`[Seed Check] Database already contains ${existingUsersCount} user records.`);
     return;
   }

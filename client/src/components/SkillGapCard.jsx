@@ -45,11 +45,15 @@ export const SkillGapCard = ({ skill }) => {
       <div className="mt-4 grid grid-cols-3 gap-2 text-center bg-surface-sec p-2.5 rounded-lg border border-sb-default text-xs">
         <div>
           <span className="block text-sb-sec text-[10px] uppercase font-medium">Current</span>
-          <span className="font-bold text-sb-main mt-0.5 block">{currentLevel}/5</span>
+          <span className="font-bold text-sb-main mt-0.5 flex items-center justify-center gap-1">
+            <span className="text-amber-400">★</span> {currentLevel}/5
+          </span>
         </div>
         <div>
           <span className="block text-sb-sec text-[10px] uppercase font-medium">Required</span>
-          <span className="font-bold text-sb-main mt-0.5 block">{requiredLevel}/5</span>
+          <span className="font-bold text-sb-main mt-0.5 flex items-center justify-center gap-1">
+            <span className="text-amber-400">★</span> {requiredLevel}/5
+          </span>
         </div>
         <div>
           <span className="block text-sb-sec text-[10px] uppercase font-medium">Gap Size</span>

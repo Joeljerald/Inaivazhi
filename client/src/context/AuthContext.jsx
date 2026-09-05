@@ -45,6 +45,14 @@ export const AuthProvider = ({ children }) => {
     throw new Error(res.data.message || 'Login failed');
   };
 
+  const register = async (registerData) => {
+    const res = await api.post('/auth/register', registerData);
+    if (res.data.success) {
+      return res.data;
+    }
+    throw new Error(res.data.message || 'Registration failed');
+  };
+
   const logout = () => {
     localStorage.removeItem('skillbridge_token');
     localStorage.removeItem('skillbridge_user');
@@ -65,7 +73,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, loading, login, logout, refreshUser }}>
+    <AuthContext.Provider value={{ user, loading, login, register, logout, refreshUser }}>
       {children}
     </AuthContext.Provider>
   );

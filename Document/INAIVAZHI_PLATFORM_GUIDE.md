@@ -4,9 +4,9 @@ Welcome to **Inaivazhi**, an Employee & Student Skill Gap Intelligence Platform 
 
 ---
 
-## 🔑 Demo Access Credentials (Usernames & Passwords)
+## 🔑 Platform Access Credentials (Usernames & Passwords)
 
-Use these pre-seeded accounts to explore all 4 distinct role perspectives. You can also use the **1-Click Role Switcher** on the `/login` screen to instantly populate these credentials.
+Use these role accounts to access all 4 distinct role perspectives. You can also use the **1-Click Role Switcher** on the `/login` screen to populate these credentials.
 
 | Role | Username / Email | Password | Track / Department | Primary Access / Capabilities |
 | :--- | :--- | :--- | :--- | :--- |

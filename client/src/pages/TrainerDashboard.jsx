@@ -137,7 +137,10 @@ export const TrainerDashboard = () => {
                   <td className="p-3 font-bold text-sb-main">{st.userId?.name}</td>
                   <td className="p-3 text-sb-sec">{st.course}</td>
                   <td className="p-3 text-sb-sec font-bold">{st.skillCount} skills</td>
-                  <td className="p-3 font-bold text-emerald-600 dark:text-emerald-400">{st.overallRating}/5</td>
+                  <td className="p-3 font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                    <span className="text-amber-400">★</span>
+                    <span>{st.overallRating}/5</span>
+                  </td>
                   <td className="p-3 text-sb-sec">{st.associatedCompany}</td>
                   <td className="p-3 text-indigo-600 dark:text-indigo-400 font-medium">{st.interviewStatus}</td>
                 </tr>
